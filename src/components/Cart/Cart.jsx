@@ -15,7 +15,7 @@ const Cart = ({ setIsCartOpen }) => {
 
   return (
     <div className="w-full flex flex-col h-full">
-      <header className="flex justify-center items-center gap-2">
+      <header className=" flex  gap-2">
         <TiShoppingCart className="text-3xl text-secondary" />
         <h1 className="text-2xl font-semibold flex-1">Cart</h1>
         <IoCloseSharp
@@ -24,7 +24,7 @@ const Cart = ({ setIsCartOpen }) => {
         />
       </header>
 
-      <div className="border-[1px] mt-2 scale-x-150" />
+      <div className="border-[1px] mt-2" />
 
       {items.length ? (
         <nav className="overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-hide">
@@ -44,14 +44,14 @@ const Cart = ({ setIsCartOpen }) => {
 
       <div className="border-[1px] my-4 scale-x-150" />
 
-      <div className="mt-auto drop-shadow-2xl">
-        <div className="flex text-sm">
+      <div className=" mt-auto drop-shadow-2xl">
+        <div className="flex">
           <p className="mr-auto">Total Items :</p>
-          <p className="text-end">{totalQuantity}</p>
+          <p >{totalQuantity}</p>
         </div>
         <div className="flex text-lg font-semibold mb-3">
           <p className="mr-auto">Total Amount :</p>
-          <p className="text-end">{totalAmount} ₹</p>
+          <p>{totalAmount} ₹</p>
         </div>
 
         <Link to="/order">

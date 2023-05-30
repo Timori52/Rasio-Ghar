@@ -27,7 +27,7 @@ const Header = ({ setIsCartOpen }) => {
   return (
     <header
       className={`fixed z-30 h-16 top-0 left-0 w-screen flex justify-center items-center pl-4 pr-10 ${
-        navBgColor || location.pathname !== "/"
+        navBgColor 
           ? "bg-secondary drop-shadow-xl"
           : "bg-transparent"
       } transition-all duration-500`}
@@ -42,8 +42,7 @@ const Header = ({ setIsCartOpen }) => {
         {location.pathname === "/logIn" ||
         location.pathname === "/signUp" ||
         location.pathname === "/forgotPassword" ? (
-          ""
-        ) : (
+          "" ) : (
           <nav className="ml-auto hidden md:block">
             <ul className="flex gap-6">
               {navLinks.map((link) => (

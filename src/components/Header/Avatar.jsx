@@ -11,7 +11,7 @@ import { RiLoginBoxLine } from "react-icons/ri";
 const Avatar = () => {
   return (
     <Menu as="div" className="relative inline-block text-left">
-      <Menu.Button>
+      <Menu.Button> 
         <div className="relative w-12 cursor-pointer rounded-full">
           <Lottie animationData={avatarIllustration} loop={true} />
         </div>
@@ -33,7 +33,7 @@ const Avatar = () => {
                 to="logIn"
                 className={`${
                   active ? "bg-secondary text-primary" : ""
-                } group flex w-full items-center rounded-md px-4 py-2`}
+                }  flex w-full items-center rounded-md px-4 py-2`}
               >
                 <RiLoginBoxLine
                   className={`mr-2 text-xl ${

@@ -24,11 +24,8 @@ const CartButton = () => {
 
   return (
     <div
-      className={`relative group cursor-pointer p-3 duration-200  hover:scale-110 ${
-        btnBump && "scale-110"
-      }`}
-    >
-      <TiShoppingCart className="text-3xl text-primary group-active:text-accent" />
+      className= "relative group cursor-pointer p-3  duration-200  hover:scale-110  "    >
+      <TiShoppingCart className="text-3xl text-primary group-active:text-accent hover:text-accent" />
       <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-primary bg-accent rounded-full top-0 -right-2">
         {totalQuantity}
       </div>
